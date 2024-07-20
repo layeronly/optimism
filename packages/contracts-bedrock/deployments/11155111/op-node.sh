@@ -1,0 +1,18 @@
+/root/optimism/op-node/bin/op-node \
+  --l2=http://localhost:8551 \
+  --l2.jwt-secret=/root/optimism/packages/contracts-bedrock/deployments/11155111/jwt.txt \
+  --sequencer.enabled \
+  --sequencer.l1-confs=5 \
+  --verifier.l1-confs=4 \
+  --rollup.config=/root/optimism/packages/contracts-bedrock/deployments/11155111/rollup.json \
+  --rpc.addr=0.0.0.0 \
+  --rpc.port=8547 \
+  --p2p.disable \
+  --rpc.enable-admin \
+  --p2p.sequencer.key=0x8c1c830e8c0b1ed85f59ebfccc7928e3349d9d0be9fd726d278ce0db8e85723c \
+  --l1=https://cosmological-blue-patina.ethereum-sepolia.quiknode.pro/ee6670d8c9a93d3c797da6db6cf037ed67510a85/ \
+  --l1.rpckind=quicknode \
+  --metrics.enabled \
+  --metrics.addr=0.0.0.0 \
+  --metrics.port=7300 \
+  --pprof.enabled
